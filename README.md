@@ -24,3 +24,16 @@ def loss_fn(images):
 ```
 ![image](https://github.com/RaviNaik/ERA-SESSION20/assets/23289802/c9d46e14-44bb-4ea7-88a4-26ef46344fce)
 
+```python
+def loss_fn(images):
+    return -images.median()/3
+```
+![image](https://github.com/RaviNaik/ERA-SESSION20/assets/23289802/2649e4f6-3de5-4e54-8f22-3d65874b7b07)
+
+```python
+def loss_fn(images):
+    error = (images - images.min()) / 255*(images.max() - images.min())
+    return error.mean()
+```
+![image](https://github.com/RaviNaik/ERA-SESSION20/assets/23289802/6399c780-e9b7-42f8-8d90-44c8b40d5265)
+
