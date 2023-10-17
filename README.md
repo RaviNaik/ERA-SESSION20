@@ -15,4 +15,12 @@ _"cs" in the prompt refers to "custom style" whose embedding is replaced by each
 **Prompt:** `"dolphin swimming on Mars in the style of cs"`
 ![image](https://github.com/RaviNaik/ERA-SESSION20/assets/23289802/2cd32248-4233-42c0-97c0-00e1ae8fdc85)
 
+### Result of Experiments with Guidance loss functions:
+**Prompt:** `"a mouse in the style of cs"`
+**Loss Function:**
+```python
+def loss_fn(images):
+    return images.mean()
+```
+![image](https://github.com/RaviNaik/ERA-SESSION20/assets/23289802/c9d46e14-44bb-4ea7-88a4-26ef46344fce)
 
