@@ -37,3 +37,15 @@ def loss_fn(images):
 ```
 ![image](https://github.com/RaviNaik/ERA-SESSION20/assets/23289802/6399c780-e9b7-42f8-8d90-44c8b40d5265)
 
+**Prompt:** `"angry german shephard in the style of cs"`
+```python
+def loss_fn(images):
+    error1 = torch.abs(images[:, 0] - 0.9)
+    error2 = torch.abs(images[:, 1] - 0.9)
+    error3 = torch.abs(images[:, 2] - 0.9)
+    return (
+        torch.sin(error1.mean()) + torch.sin(error2.mean()) + torch.sin(error3.mean())
+    ) / 3
+```
+![image](https://github.com/RaviNaik/ERA-SESSION20/assets/23289802/fa7d30ed-4efd-4504-b89c-94e093f51f9c)
+
