@@ -1,4 +1,4 @@
-# ERA-SESSION20
+# ERA-SESSION20 - Stable Diffusion: Generative Art with Guidance
 
 **Styles Used:**
 1. [Oil style](https://huggingface.co/sd-concepts-library/oil-style)
