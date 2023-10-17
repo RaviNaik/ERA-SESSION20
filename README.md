@@ -50,3 +50,30 @@ def loss_fn(images):
 ```
 ![image](https://github.com/RaviNaik/ERA-SESSION20/assets/23289802/fa7d30ed-4efd-4504-b89c-94e093f51f9c)
 
+---
+**Prompt:** `"A campfire (oil on canvas)"`
+```python
+def loss_fn(images):
+    error1 = torch.abs(images[:, 0] - 0.9)
+    error2 = torch.abs(images[:, 1] - 0.9)
+    error3 = torch.abs(images[:, 2] - 0.9)
+    return (
+        torch.sin((error1 * error2 * error3)).mean()
+        + torch.cos((error1 * error2 * error3)).mean()
+    )
+```
+![image](https://github.com/RaviNaik/ERA-SESSION20/assets/23289802/88382dae-6701-4103-a664-ed17727b690f)
+
+---
+```python
+def loss_fn(images):
+    error1 = torch.abs(images[:, 0] - 0.9)
+    error2 = torch.abs(images[:, 1] - 0.9)
+    error3 = torch.abs(images[:, 2] - 0.9)
+    return (
+        torch.sin(error1.mean()) + torch.sin(error2.mean()) + torch.sin(error3.mean())
+    ) / 3
+```
+![image](https://github.com/RaviNaik/ERA-SESSION20/assets/23289802/0ab3edad-579d-4821-b992-6c18b61bd444)
+
+
