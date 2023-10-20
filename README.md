@@ -1,5 +1,13 @@
 # ERA-SESSION20 - Stable Diffusion: Generative Art with Guidance
-HF Link: https://huggingface.co/spaces/RaviNaik/ERA-SESSION20
+HuggingFace Space Link: https://huggingface.co/spaces/RaviNaik/ERA-SESSION20
+
+### Tasks:
+1. :heavy_check_mark: Select 5 different styles of your choice and show output for the same prompt using these 5 different styles. Remember the seeds as you'll use them later. Keep seeds different for each 5 types.
+2. :heavy_check_mark: Now apply your own variant of "blue_loss" (it cannot be red, green, or blue loss) on the same prompts with each concept library and store the results.
+3. :heavy_check_mark: Convert this into an app on Huggingface (and share on LinkedIn to get 500 extra points)
+4. Share:
+ - :heavy_check_mark: the link to your post
+ - :heavy_check_mark: share the GitHub link where I can find your colab file and creative loss details.
 
 **Styles Used:**
 1. [Oil style](https://huggingface.co/sd-concepts-library/oil-style)
@@ -7,6 +15,10 @@ HF Link: https://huggingface.co/spaces/RaviNaik/ERA-SESSION20
 3. [Allante](https://huggingface.co/sd-concepts-library/style-of-marc-allante)
 4. [Moebius](https://huggingface.co/sd-concepts-library/moebius)
 5. [Polygons](https://huggingface.co/sd-concepts-library/low-poly-hd-logos-icons)
+
+### HuggingFace Space UI:
+![image](https://github.com/RaviNaik/ERA-SESSION20/assets/23289802/a8076e33-9d89-4a78-84b7-ad9569873560)
+
 
 ### Result of Experiments with different styles:
 **Prompt:** `"a cat and dog in the style of cs"` \
